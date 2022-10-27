@@ -1,0 +1,32 @@
+	Product product1 = new Product();
+										// set value
+		product1.name = "Delonghi Kahve Makinesi";
+		product1.unitPrice = 7500;
+		product1.discount = 7;
+		product1.unitInStock = 3;
+		product1.imageUrl = "bilmem1 ne.jpg";
+
+		Product product2 = new Product();
+										// set value
+		product2.name = "Smegi Kahve Makinesi";
+		product2.unitPrice = 6500;
+		product2.discount = 8;
+		product2.unitInStock = 2;
+		product2.imageUrl = "bilmem2 ne.jpg";
+
+		Product product3= new Product();
+										// set value
+		product3.name = "Kitchen Aid Kahve Makinesi";
+		product3.unitPrice = 4500;
+		product3.discount = 9;
+		product3.unitInStock = 4;
+		product3.imageUrl = "bilmem3 ne.jpg";
+		
+		Product [] products = {product1, product2, product3};
+		
+		System.out.println("<ul>");
+		for (Product product : products) {
+				System.out.println("<li>" + product.name + "</li>");	
+			
+	}
+		System.out.println("</ul>");	
